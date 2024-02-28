@@ -20,6 +20,12 @@
     cursor: pointer;
 }
 
+.font-color-gray {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* Header styles  */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -68,15 +74,48 @@ nav li a {
     font-weight: 700;
 }
 
-.banner-description {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 
 .banner img {
     margin-top: 20px;
     width: 100%;
+}
+
+/* Main styles start  */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* features section stayles start  */
+.features-section {
+    display: flex;
+    align-items: center;
+}
+
+.features-images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(24rem / 16);
+}
+
+.features-details-container {
+    padding-left: calc(70rem/16);
+    padding-right: calc(70rem/16);
+}
+
+.features-title {
+    font-size: calc(45rem / 16);
+}
+
+.Quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.text-features {
+    color: #FF900E;
+    font-weight: 700;
 }
 
 /* responsive media quiry  */
@@ -86,18 +125,24 @@ nav li a {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .features-section {
         flex-direction: column;
+    }
+
+    .features-images-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 /* tablate devises  */
 @media screen and (min-width: 576px) and (max-width:960px) {
     header {
-        padding: 20px;
+        padding: 40px;
     }
 
-    nav {
+    nav,
+    .features-section {
         flex-direction: column;
     }
 }
