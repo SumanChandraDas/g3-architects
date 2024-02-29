@@ -149,6 +149,24 @@ main {
     margin-top: 0;
 }
 
+/* facts styles end  */
+/* sponsors styles start  */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponsors-image-container img {
+    width: 150px;
+}
+
 /* responsive media quiry  */
 /* mobile devices  */
 @media screen and (max-width:576px) {
@@ -158,7 +176,8 @@ main {
 
     nav,
     .features-section,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-image-container {
         flex-direction: column;
     }
 
@@ -178,7 +197,8 @@ main {
     }
 
     nav,
-    .features-section {
+    .features-section,
+    .sponsors-image-container {
         flex-direction: column;
     }
 }
