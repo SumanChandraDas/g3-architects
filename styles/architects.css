@@ -120,6 +120,59 @@ main {
     font-weight: 700;
 }
 
+/* enjoy feature section start  */
+.enjoy-features {
+    display: flex;
+}
+
+.enjoy-features .section-title {
+    border-left: 5px solid #FF900E;
+    padding: calc(20rem / 16);
+}
+
+.enjoy-feature-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin: 20px;
+}
+
+.enjoy-feature-card .card-heading {
+    margin: 0;
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enjoy-features-image img {
+    margin-left: calc(90rem/16);
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: calc(342rem/16);
+    text-align: center;
+    padding: calc(42rem/16) calc(45rem/16);
+    position: relative;
+    bottom: calc(72rem/ 16);
+}
+
+.ten-years-badge h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: calc(65rem/16);
+}
+
+.ten-years-badge p {
+    font-weight: 500;
+    font-size: calc(25rem/16);
+}
+
+/* enjoy feature section end  */
+
 /* facts style  */
 .facts>.font-color-gray {
     margin-bottom: calc(100rem/16);
@@ -167,6 +220,8 @@ main {
     width: 150px;
 }
 
+/* sponsors styles end  */
+
 /* responsive media quiry  */
 /* mobile devices  */
 @media screen and (max-width:576px) {
@@ -177,13 +232,24 @@ main {
     nav,
     .features-section,
     .facts-card-container,
-    .sponsors-image-container {
+    .sponsors-image-container,
+    .enjoy-features {
         flex-direction: column;
     }
 
     .features-images-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .enjoy-features-image img {
+        width: 80%;
+    }
+
+    .ten-years-badge {
+        max-width: calc(250rem/16);
+
+    }
+
 
     .facts-card-container {
         gap: 20px;
@@ -198,7 +264,17 @@ main {
 
     nav,
     .features-section,
-    .sponsors-image-container {
+    .sponsors-image-container,
+    .enjoy-features {
         flex-direction: column;
+    }
+
+    .enjoy-features-image img {
+        width: 80%;
+    }
+
+    .ten-years-badge {
+        max-width: calc(300rem/16);
+
     }
 }
