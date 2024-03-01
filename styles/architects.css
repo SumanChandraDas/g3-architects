@@ -123,6 +123,7 @@ main {
 /* enjoy feature section start  */
 .enjoy-features {
     display: flex;
+    margin-top: 50px;
 }
 
 .enjoy-features .section-title {
